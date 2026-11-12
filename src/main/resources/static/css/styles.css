@@ -1,0 +1,88 @@
+:root {
+    --verde-principal: #198754;
+    --verde-oscuro: #11613b;
+    --fondo: #f3f7f5;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-success {
+    background-color: var(--verde-principal);
+}
+
+.btn-success:hover {
+    background-color: var(--verde-oscuro);
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+.table {
+    vertical-align: middle;
+}
+
+.table th {
+    font-weight: 600;
+}
+
+.hero-icon {
+    font-size: 6rem;
+    line-height: 1.5;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+@media (max-width: 768px) {
+    .hero-icon {
+        font-size: 4rem;
+    }
+
+    h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .card-body {
+        padding: 18px;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+}
